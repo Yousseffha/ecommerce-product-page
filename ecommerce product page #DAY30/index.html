@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product page</title>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize file -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Js file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="box">
+            <div id="menu">
+                <img src="/images/icon-menu.svg" alt="">
+            </div>
+          <div class="logo">
+            <img src="/images/logo.svg" alt="" />
+          </div>
+          <ul id="ul">
+            <img src="/images/icon-close.svg" alt="" id="x-mark">
+            <li>collections</li>
+            <li>men</li>
+            <li>women</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="box">
+          <div class="cart" id="cart">
+            <img src="/images/icon-cart.svg" alt="" />
+          </div>
+          <div class="cart-content" id="cart-content">
+            <div class="title">cart</div>
+            <div class="products" id="products">your cart is empty</div>
+          </div>
+          <div class="account">
+            <img src="/images/image-avatar.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="box">
+          <div class="selected-img" id="selected-img">
+            <div class="change" id="previous">
+              <img src="/images/icon-previous.svg" alt="">
+            </div>
+            <img src="/images/image-product-1-thumbnail.jpg" alt="" class="current-img" id="current-img">
+            <div class="change" id="next">
+              <img src="/images/icon-next.svg" alt="">
+            </div>
+          </div>
+          <div class="images">
+            <div class="image selected" >
+              <img src="/images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="/images/image-product-2-thumbnail.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="/images/image-product-3-thumbnail.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="/images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="box hidden" id="hidden">
+          <img src="/images/icon-close.svg" alt="" class="x-mark" id="hidden-close">
+          <div class="selected-img">
+            <div class="change" id="previous">
+              <img src="/images/icon-previous.svg" alt="">
+            </div>
+            <img src="/images/image-product-1-thumbnail.jpg" alt="" class="current-img" id="hidden-current-img">
+            <div class="change" id="next">
+              <img src="/images/icon-next.svg" alt="">
+            </div>
+          </div>
+          <div class="images">
+            <div class="hdden-image selected" >
+              <img src="/images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <div class="hdden-image">
+              <img src="/images/image-product-2-thumbnail.jpg" alt="">
+            </div>
+            <div class="hdden-image">
+              <img src="/images/image-product-3-thumbnail.jpg" alt="">
+            </div>
+            <div class="hdden-image">
+              <img src="/images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="title">sneakers company</p>
+          <div class="info">
+            <h1>fall limited edition sneakers</h1>
+            <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div class="price">
+              <span class="new-price">$125.00</span>
+              <span class="discount">50%</span>
+              <span class="old-price">$250.00</span>
+            </div>
+          </div>
+          <div class="shop">
+            <div class="number-of-pieces-controls">
+              <button id="minus">-</button>
+              <span class="number-of-pieces" id="number-of-pieces">0</span>
+              <button id="plus">+</button>
+            </div>
+            <button id="add-to-cart"> <img src="/images/icon-cart.svg" alt=""> add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
